@@ -66,8 +66,7 @@ class ContextCreateView(ContextFormMixin, CreateView):
     pass
 
 
-# class AuthorDetail(DetailView, ListView):
-class AuthorDetail(SingleObjectMixin, MultipleObjectMixin):
+class AuthorDetail(DetailView, ListView):
     """ Combined detail / list view.
 
         Note: here we're not using `allow_empty` functionality in ListView.get(), if we needed that, we would need to
